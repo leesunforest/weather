@@ -90,9 +90,9 @@ def merge_all_types(temp_df: pd.DataFrame,
     # 정렬
     merged = merged.sort_values('datetime').reset_index(drop=True)
     
-    # 날짜/시간 분리
+    # 날짜/시간 분리 (hour를 정수로)
     merged['date'] = merged['datetime'].dt.strftime('%Y%m%d')
-    merged['hour'] = merged['datetime'].dt.strftime('%H%M')
+    merged['hour'] = merged['datetime'].dt.hour  # 0~23 정수
     
     # 컬럼 순서 조정 (datetime 제거)
     final_columns = ['date', 'hour', 'temperature', 'rain_prob', 'rain_type']
