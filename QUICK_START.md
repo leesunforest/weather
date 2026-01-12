@@ -4,9 +4,9 @@
 
 ```
 weather/
-├── README.md              # 이 파일 - 빠른 시작 가이드
+├── QUICK_START.md         # 이 파일 - 빠른 시작 가이드
+├── README.md              # 기본 사용법
 ├── README_MODULES.md      # 모듈별 상세 설명서
-├── requirements.txt       # Python 패키지 의존성
 ├── modules/              # Python 소스 코드
 │   ├── main_pipeline.py       # 메인 실행 파일
 │   ├── data_parser.py         # CSV 파싱 모듈
@@ -23,11 +23,19 @@ weather/
 
 ## 🚀 빠른 시작
 
-### 1단계: Python 패키지 설치
+### 1단계: 필수 라이브러리 확인 및 설치
+
+이 프로그램은 **pandas**만 필요합니다.
+
 ```bash
-cd weather
-pip install -r requirements.txt
+# pandas 설치 여부 확인
+python3 -c "import pandas; print('pandas', pandas.__version__, 'installed')"
+
+# pandas가 없다면 설치
+pip install pandas
 ```
+
+**참고:** `sqlite3`는 Python 기본 내장 라이브러리이므로 별도 설치가 필요없습니다.
 
 ### 2단계: 데이터 준비
 `data/raw/` 폴더에 다음 형식의 CSV 파일을 넣으세요:
