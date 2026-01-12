@@ -112,6 +112,8 @@ date,min_temp,max_temp
 
 ## 💾 SQLite 데이터베이스 사용
 
+> 📘 **상세 스키마 정보**: 전체 테이블 구조, 컬럼 설명, 샘플 쿼리는 [`DATABASE_SCHEMA.md`](DATABASE_SCHEMA.md)를 참조하세요.
+
 ### Python에서 사용
 
 #### 시간별 데이터 조회
