@@ -35,7 +35,6 @@ python3 main_pipeline.py
 ├── QUICK_START.md            # 빠른 시작 가이드
 ├── README.md                 # 이 파일
 ├── README_MODULES.md         # 상세한 모듈 설명서
-├── DATABASE_SCHEMA.md        # 데이터베이스 스키마 문서
 ├── modules/                  # Python 모듈들
 │   ├── main_pipeline.py      # 메인 실행 파일
 │   ├── data_parser.py        # 파싱 모듈
@@ -99,8 +98,6 @@ cursor = conn.cursor()
 cursor.execute("SELECT * FROM weather_data WHERE date = '20230101'")
 results = cursor.fetchall()
 ```
-
-> 📘 **더 많은 쿼리 예시**: [`DATABASE_SCHEMA.md`](DATABASE_SCHEMA.md)에서 테이블 구조와 다양한 SQL 쿼리 예시를 확인하세요.
 
 ## 📖 더 자세한 정보
 
